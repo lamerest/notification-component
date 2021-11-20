@@ -1,15 +1,30 @@
 .notification {
-    display: none;
     position: fixed;
     bottom: -110%;
     left: 50%;
     transform: translateX(-50%);
-    padding: 12px;
+    padding: 9px 12px;
+    border-radius: 8px;
+    min-width: 300px;
     border: 1px solid transparent;
-    transition: 0.3s ease-in-out;
+    transition: 0.5s ease-in-out;
+    font-family: Open Sans, sans-serif;
+
+    &__header {
+        margin: 0;
+    }
+
+    &__message {
+        margin: 0;
+    }
+
+    &__close-btn {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+    }
 
     &_active {
-        display: block;
         bottom: 24px;
     }
 
@@ -18,7 +33,7 @@
         border-color: #FF3434;
     }
 
-    &_acknowledgement {
+    &_acknowledgment {
         color: #42C6FF;
         border-color: #42C6FF;
     }
