@@ -1,0 +1,11 @@
+<div 
+    class="notification" 
+    [class.active]="_notificationService.isNotificationBarOpen"
+    [ngClass]="'notification_' + getNotificationTypeAsString()"
+>
+    <h3 class="notification__header">{{ _notificationService.title }}</h3>
+    <p class="notification__message">{{ _notificationService.message }}</p>
+    <button (click)="closeNotificationBar()" class="notification__close-btn">
+        X
+    </button>
+</div>

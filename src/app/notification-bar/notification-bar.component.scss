@@ -1,0 +1,30 @@
+.notification {
+    display: none;
+    position: fixed;
+    bottom: -110%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px;
+    border: 1px solid transparent;
+    transition: 0.3s ease-in-out;
+
+    &_active {
+        display: block;
+        bottom: 24px;
+    }
+
+    &_error {
+        color: #FF3434;
+        border-color: #FF3434;
+    }
+
+    &_acknowledgement {
+        color: #42C6FF;
+        border-color: #42C6FF;
+    }
+
+    &_success {
+        color: #5EFF6E;
+        border-color: #5EFF6E;
+    }
+}
